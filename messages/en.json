@@ -1,0 +1,41 @@
+{
+  "navbar": {
+    "header": "Cairo International Airport (R25)"
+  },
+  "auth": {
+    "authTemplate": {
+      "Welcome To": "Welcome To"
+    },
+    "login": {
+      "title": "Login",
+      "subtitle": "Enter your credentials to access your account",
+      "username": "Username",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Login",
+      "submitting": "Logging in...",
+      "welcomeBack": "Welcome back!",
+      "placeholder": {
+        "username": "Enter your username",
+        "password": "Enter your password"
+      }
+    }
+  },
+  "common": {
+    "language": "Language",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "english": "English",
+    "arabic": "العربية",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "settings": "Settings"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "services": "Services"
+  }
+}

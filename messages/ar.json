@@ -1,0 +1,38 @@
+{
+  "auth": {
+    "authTemplate": {
+      "Welcome To": "مرحباً بك في"
+    },
+    "login": {
+      "title": "تسجيل الدخول",
+      "subtitle": "أدخل بياناتك للوصول إلى حسابك",
+      "username": "اسم المستخدم",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "submit": "تسجيل الدخول",
+      "submitting": "جاري تسجيل الدخول...",
+      "welcomeBack": "مرحباً بعودتك!",
+      "placeholder": {
+        "username": "أدخل اسم المستخدم",
+        "password": "أدخل كلمة المرور"
+      }
+    }
+  },
+  "common": {
+    "language": "اللغة",
+    "theme": "المظهر",
+    "light": "فاتح",
+    "dark": "داكن",
+    "english": "English",
+    "arabic": "العربية",
+    "dashboard": "لوحة التحكم",
+    "logout": "تسجيل الخروج",
+    "settings": "الإعدادات"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "about": "حول",
+    "contact": "اتصل بنا",
+    "services": "الخدمات"
+  }
+}
