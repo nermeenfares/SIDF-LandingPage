@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        leftHex:
+          "-8px -8px 10px -6px rgba(0,0,0,0.15), -8px 8px 10px -6px rgba(0,0,0,0.15)",
+      },
       fontSize: {
         body: ["18px", { lineHeight: "100%" }],
         heading: ["20px", { lineHeight: "100%" }],

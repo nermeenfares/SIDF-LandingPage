@@ -21,12 +21,7 @@ function Footer() {
         </div>
       </div>
 
-      <div
-        className="p-3 border-l-2 border-b-2 border-gray-400 hover:bg-pink-200 transition-all duration-300 rounded-none hover:-mb-1"
-        style={{
-          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-        }}
-      >
+      <div className="p-3 border-l-2 clip-hexagon border-b-2 border-gray-400 hover:bg-pink-200 transition-all duration-300 rounded-none hover:-mb-1">
         <FaFacebookF className="text-gray-700 text-lg" />
       </div>
     </footer>
