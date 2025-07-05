@@ -43,3 +43,52 @@ export const statisticsData = [
   { year: 2017, value: 65 },
   { year: 2019, value: 105 },
 ];
+
+export const strategicGoals = [
+  {
+    id: 1,
+    icon: "/svg/strategy-icon1",
+    title: "التكامل بين القطاع الصناعي والقطاعات الأخرى",
+  },
+  {
+    id: 2,
+    icon: "/svg/stratgy-icon2",
+    title: "تعزيز الصادرات غير النفطية",
+  },
+  {
+    id: 3,
+    icon: "/svg/stratgy-icon3",
+    title: "دعم المنتج المحلي",
+  },
+  {
+    id: 4,
+    icon: "/svg/stratgy-icon4",
+    title: "رفع كفاءة وأداء المنشآت لتحقيق استدامة",
+  },
+  {
+    id: 5,
+    icon: "/svg/stratgy-icon5",
+    title:
+      "تعميم ثقافة السلامة الصناعية والوقاية من المخاطر في المنشآت الصناعية",
+  },
+  {
+    id: 6,
+    icon: "/svg/stratgy-icon6",
+    title: "استقطاب رؤوس الأموال الأجنبية وفتح وتطوين الفنية",
+  },
+  {
+    id: 7,
+    icon: "/svg/stratgy-icon7",
+    title: "الاستغلال الأمثل للمواد الخام المحلية",
+  },
+  {
+    id: 8,
+    icon: "/svg/stratgy-icon8",
+    title: "رفع نسبة مشاركة الكفاءات السعودية في القطاع الصناعي",
+  },
+  {
+    id: 9,
+    icon: "/svg/stratgy-icon9",
+    title: "رفع نسبة مشاركة الكفاءات السعودية في القطاع الصناعي",
+  },
+];

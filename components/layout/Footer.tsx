@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer className="fixed bottom-0 h-20  w-full bg-white shadow-[0_-2px_6px_rgba(0,0,0,0.1)] px-10 py-2 flex justify-between items-center z-50">
       <div className="flex items-center gap-4">
-        <Image src="/svg/qrCode.svg" alt="QR Code" width={50} height={50} />
+        <Image src="/images/qrCode.png" alt="QR Code" width={50} height={50} />
         <div className="flex flex-col text-sm gap-1">
           <div className="flex items-center gap-2 text-gray-600">
             <Globe size={16} />

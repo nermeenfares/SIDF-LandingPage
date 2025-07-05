@@ -1,7 +1,7 @@
 import React from "react";
 export default function HeroSection() {
   return (
-    <div className="relative pt-40 w-full h-screen overflow-hidden">
+    <div className="relative pt-28 w-full h-screen overflow-hidden">
       <video
         src="/videos/video.mp4"
         autoPlay
