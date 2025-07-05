@@ -33,3 +33,13 @@ export const values = [
     color: "#6a567f",
   },
 ];
+
+export const statisticsData = [
+  { year: 1974, value: 0.5 },
+  { year: 1975, value: 3 },
+  { year: 1992, value: 7 },
+  { year: 2005, value: 20 },
+  { year: 2012, value: 40 },
+  { year: 2017, value: 65 },
+  { year: 2019, value: 105 },
+];
