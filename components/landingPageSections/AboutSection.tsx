@@ -4,13 +4,13 @@ import Image from "next/image";
 function AboutSection() {
   return (
     <div
-      className="relative min-h-screen bg-cover bg-center bg-no-repeat"
+      className="relative min-h-screen bg-cover bg-center bg-no-repeat clip-hexDiagonal-reversed"
       style={{
         backgroundImage: "url('/images/solar-system.jpg')",
       }}
       dir="rtl"
     >
-      <div className="absolute inset-0 bg-green-600 bg-opacity-40"></div>
+      <div className="absolute inset-0 bg-[#417f57] bg-opacity-80"></div>
 
       <div className="relative z-10 px-8 py-16">
         <div className="max-w-7xl mx-auto">
@@ -31,18 +31,14 @@ function AboutSection() {
               return (
                 <div
                   key={goal.id}
-                  className="bg-green-700 bg-opacity-80 p-6 text-white transition-all duration-300 hover:bg-opacity-100 hover:scale-105"
-                  style={{
-                    clipPath:
-                      "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
-                  }}
+                  className="bg-[#396a4a] items-center clip-hexDiagonal bg-opacity-80 p-6 text-white transition-all duration-300 hover:bg-opacity-100 hover:scale-105"
                 >
                   <div className="flex flex-col items-center text-center h-full">
                     <div className="mb-4">
                       <Image
                         width="88"
                         height="88"
-                        alt={goal.id}
+                        alt={goal.id.toString()}
                         src={goal.icon}
                       />
                       {/* <IconComponent size={48} className="text-white" /> */}

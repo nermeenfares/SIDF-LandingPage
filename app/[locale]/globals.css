@@ -1,7 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer utilities {
+  .clip-hexDiagonal {
+    clip-path: polygon(
+      0 0,
+      calc(100% - 20px) 0,
+      100% 20px,
+      100% 100%,
+      20px 100%,
+      0 calc(100% - 20px)
+    );
+  }
+  .clip-hexDiagonal-reversed {
+    clip-path: polygon(
+      40px 0,
+      100% 0,
+      100% calc(100% - 40px),
+      calc(100% - 40px) 100%,
+      0 100%,
+      0 40px
+    );
+  }
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
