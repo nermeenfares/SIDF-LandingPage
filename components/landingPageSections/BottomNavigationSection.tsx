@@ -3,14 +3,9 @@ import { ChevronLeft, Home } from "lucide-react";
 
 function BottomNavigationSection() {
   return (
-    <div className="w-full flex gap-4 mt-8">
-      <div className="flex-1">
-        <div
-          className="bg-gray-400 hover:bg-primary transition-colors duration-300 h-20 flex items-center justify-center text-white cursor-pointer group"
-          style={{
-            clipPath: "polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0 100%)",
-          }}
-        >
+    <div className="w-full flex gap-4 pb-32 items-center justify-center">
+      <div className="w-fit">
+        <div className="bg-[#c1c3c5] clip-hexDiagonal-reversed hover:bg-primary transition-colors duration-300 h-20 flex items-center justify-center text-white cursor-pointer group">
           <div className="flex items-center gap-3 px-6">
             <ChevronLeft
               size={24}
@@ -24,13 +19,8 @@ function BottomNavigationSection() {
         </div>
       </div>
 
-      <div className="flex-1">
-        <div
-          className="bg-gray-400 hover:bg-primary transition-colors duration-300 h-20 flex items-center justify-center text-white cursor-pointer group"
-          style={{
-            clipPath: "polygon(30px 0, 100% 0, 100% 100%, 0 100%)",
-          }}
-        >
+      <div className="w-fit">
+        <div className="bg-[#c1c3c5] clip-hexDiagonal-reversed hover:bg-primary transition-colors duration-300 h-20 flex items-center justify-center text-white cursor-pointer group">
           <div className="flex items-center gap-3 px-6">
             <div className="text-right">
               <div className="text-lg font-semibold">الصفحة الرئيسية</div>
