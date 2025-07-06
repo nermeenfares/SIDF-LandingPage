@@ -1,19 +1,17 @@
 import { getRequestConfig } from "next-intl/server";
 import { locales } from "./next-intl.config";
+import { notFound } from "next/navigation";
+// Removed unused or undefined RequestLocale call
+import { setRequestLocale } from "next-intl/server";
 
 export default getRequestConfig(async ({ locale }) => {
-  // Validate that the incoming `locale` is among the supported ones
-  if (!locales.includes(locale as any)) {
-    // If not, default to 'ar' (Arabic) and load its messages
-    return {
-      locale: "ar", // Explicitly return 'ar' as the locale
-      messages: (await import(`./messages/ar.json`)).default,
-    };
-  }
+  // Validate that the incoming `locale` parameter is valid
+  if (!locale || !locales.includes(locale as any)) notFound();
 
-  // If the locale is supported, load its messages
+  setRequestLocale(locale);
+
   return {
-    locale, // Explicitly return the provided locale
+    locale,
     messages: (await import(`./messages/${locale}.json`)).default,
   };
 });

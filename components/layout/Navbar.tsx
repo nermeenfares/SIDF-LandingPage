@@ -1,14 +1,10 @@
 "use client";
 import React from "react";
-import { useTranslations } from "next-intl";
-import { LanguageDropdown } from "../dropdowns/LanguageDropdown";
+
 import Image from "next/image";
-import { Menu, Layers } from "lucide-react";
 import { MenuDropdown } from "../dropdowns/MenuDropdown";
 
 function Navbar() {
-  // const t = useTranslations("navbar");
-
   return (
     <div className="fixed top-0 left-0 right-0 bg-background px-6 py-3 flex items-center justify-between w-full shadow-md z-50">
       <div className="flex items-center gap-4">
@@ -41,9 +37,6 @@ function Navbar() {
 
         <div className="w-px h-8 bg-gray-300"></div>
 
-        {/* <button className="text-foreground hover:text-green-600 transition-colors">
-          <Menu size={24} strokeWidth={1.5} />
-        </button> */}
         <MenuDropdown />
       </div>
     </div>

@@ -2,10 +2,11 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { locales } from "@/next-intl.config";
+// import { locales } from "@/next-intl.config";
 import { ThemeProvider } from "next-themes";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import { locales } from "@/next-intl.config";
 
 const roboto = Roboto({ subsets: ["latin"] });
 
