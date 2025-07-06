@@ -7,7 +7,7 @@ import ValuesComponent from "@/components/landingPageSections/ValuesComponent";
 
 export default function Home() {
   return (
-    <main className="min-h-screen pt-32 bg-white flex gap-5 flex-col items-center justify-center text-center px-4">
+    <main className="min-h-screen pt-32 bg-background flex gap-5 flex-col items-center justify-center text-center px-4">
       <HeroSection />
       <AngledTabsSection />
       <AboutSection />

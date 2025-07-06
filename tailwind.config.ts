@@ -24,9 +24,7 @@ export default {
         medium: "500",
         semibold: "800",
       },
-      boxShadow: {
-        "deep-bottom": "0px 24px 48px -8px rgba(39, 76, 119, 0.2)",
-      },
+
       colors: {
         light: "#F8F8FB",
         border: "hsl(var(--border))",

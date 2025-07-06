@@ -14,8 +14,7 @@ function ValuesComponent() {
           <ValueCard
             key={index}
             icon={value.icon}
-            header={value.header}
-            description={value.description}
+            valueKey={value.key}
             color={value.color}
           />
         ))}

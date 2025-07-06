@@ -93,7 +93,7 @@ export default function StatisticsComponent() {
   return (
     <div
       ref={containerRef}
-      className="w-full max-w-7xl mx-auto p-8 bg-white"
+      className="w-full max-w-7xl mx-auto p-8 bg-background"
       dir="rtl"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">

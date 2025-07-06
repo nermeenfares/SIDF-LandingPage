@@ -13,17 +13,21 @@ export const metadata = {
   title: "SIDF",
   description: "SIDF Landing Page",
 };
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
-  const { locale } = params;
 
-  // Get messages for the locale
-  const messages = await getMessages();
+interface LayoutProps {
+  children: React.ReactNode;
+  params: Promise<{ locale?: string }>;
+}
+
+export default async function LocaleLayout({ children, params }: LayoutProps) {
+  const { locale } = await params;
+
+  if (!locale || !(locale === "ar" || locale === "en")) {
+    return <p>Invalid locale</p>;
+  }
+
+  const messages = await getMessages({ locale });
+
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body className={roboto.className}>
@@ -33,7 +37,7 @@ export default async function LocaleLayout({
             defaultTheme="light"
             enableSystem={false}
           >
-            <main>
+            <main className="bg-background text-foreground transition-colors duration-300">
               <Navbar />
               {children}
               <Footer />
@@ -48,22 +52,3 @@ export default async function LocaleLayout({
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
-
-// import Footer from "@/components/layout/Footer";
-// import Navbar from "@/components/layout/Navbar";
-// import React from "react";
-
-// export const metadata = {
-//   title: "Metrological",
-//   description: "Metrologocal Dashboard",
-// };
-
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-
-//   );
-// }

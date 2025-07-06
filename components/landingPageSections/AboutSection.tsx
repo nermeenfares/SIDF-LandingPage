@@ -1,7 +1,13 @@
+"use client";
+
 import { strategicGoals } from "@/constants";
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+
 function AboutSection() {
+  const t = useTranslations("AboutSection");
+
   return (
     <div
       className="relative min-h-screen bg-cover bg-center bg-no-repeat clip-hexDiagonal-reversed"
@@ -16,16 +22,13 @@ function AboutSection() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-8">
-              أهدافنا الاستراتيجية
+              {t("strategic_goals_title")}
             </h1>
             <p className="text-white text-lg md:text-xl leading-relaxed max-w-5xl mx-auto">
-              ويعمل الصندوق الصناعي بشكل فعال لتوفير الدعم المالي والاستشاري
-              وتقديم الحلول المبتكرة لنمو وتطوير الصناعة المحلية ورفع مستوى
-              أدائها، لتحقيق الأهداف التالية:
+              {t("strategic_goals_description")}
             </p>
           </div>
 
-          {/* Goals Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {strategicGoals.map((goal) => {
               return (
@@ -41,7 +44,6 @@ function AboutSection() {
                         alt={goal.id.toString()}
                         src={goal.icon}
                       />
-                      {/* <IconComponent size={48} className="text-white" /> */}
                     </div>
                     <h3 className="text-sm font-medium leading-relaxed">
                       {goal.title}
