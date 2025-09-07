@@ -1,0 +1,5 @@
+{
+  "editor.hideCursorInOverviewRuler": false,
+  "errorLens.followCursor": "allLines",
+  "editor.cursorBlinking": "blink"
+}
